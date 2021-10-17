@@ -1,3 +1,48 @@
 :root{
-    
+   --carlet: #89023E;
+   --white: #f4f4f4;
+   --Gray: #6B7280;
+}
+
+/* footer */
+.details{
+    float: right;
+    font-size: large;
+    margin-right: 5rem;
+}
+.list-contact{
+    padding: 0.5rem;
+}
+
+i{
+    padding-right: 1rem;
+}
+
+.footer-image{
+    height: 10rem;
+    margin-left:2rem;
+}
+
+.footer-container{
+    display: inline-block;
+    padding: 1.5rem;
+}
+footer{
+    background-color: var(--white);
+}
+
+.vl1{
+    display: inline-block;
+    border-left: 3px solid var(--Gray);
+    height: 10rem;
+    opacity: 0.5;
+    margin-left:7rem;
+}
+
+.vl2{
+    display: inline-block;
+    border-left: 3px solid var(--Gray);
+    height: 10rem;
+    opacity: 0.5;
+    margin-left:45rem;
 }
