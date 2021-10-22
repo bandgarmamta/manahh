@@ -4,31 +4,34 @@
    --carlet: #89023E;
    --white: #f4f4f4;
    --Gray: #6B7280;
+   
 }
 body{
     font-family: 'Montserrat', sans-serif;
     margin:0%;
     display:block;
     margin:auto;
+    background-color: var(--white);
 }
 
 /*nav bar*/
 
 .nav-image{
-    height:5rem;
+    height:6rem;
     float: left;
     margin:1rem;
 }
 nav{
-    background-color: var(--white);
+    background-color:var(--carlet);
     display: inline-block;
     width:100%;
     text-align: right;
     border: 1px solid transparent;
     border-bottom-right-radius: 1.5rem;
+    color:white;
 }
 .list-nav{
-    font-size:1.2rem;
+    font-size:1.4rem;
     display:inline-block;
     padding-right: 2rem;
     margin-right: 1rem;
@@ -40,7 +43,7 @@ nav{
     display: block;
     margin: auto;
     max-width: 40%;
-    margin-top: 2rem;
+    margin-top: 3rem;
 }
 
 .heading{
@@ -87,6 +90,7 @@ nav{
     display: block;
     margin:auto;  
     margin-top:1rem;
+    margin-bottom:0.5rem;
     font-weight: bold;
     font-family: inherit;  
 }
@@ -96,7 +100,7 @@ nav{
 }
 
 .counsel{
-    max-width:35%;
+    max-width:30.5%;
     max-height: 63%;
 }
 
@@ -129,7 +133,7 @@ i{
     padding: 1.5rem;
 }
 footer{
-    background-color: var(--white);
+    background-color: var(--carlet);
 }
 
 .vl1{
