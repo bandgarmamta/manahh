@@ -13,10 +13,7 @@ body{
 }
 
 /*nav bar*/
-.navigation-bar{
-    display:block;
-    max-width:100%;
-}
+
 .nav-image{
     height:5rem;
     float: left;
