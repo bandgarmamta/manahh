@@ -5,6 +5,7 @@
     --white: #f4f4f4;
     --dark-gray: #6B7280;
     --Gray:#9CA3AF;
+    --light-gray:#D1D5DB;
 
 }
 
@@ -125,16 +126,16 @@ nav {
     background-color: none;
     border: 3px solid var(--dark-gray);
     border-radius: 1rem;
-    box-shadow: 0 4px 8px 0 var(--Gray);
+    /* box-shadow: 0 4px 8px 0 var(--Gray); */
 }
 .test-component{
-   background-color: var(--Gray);
+   background-color: var(--light-gray);
    margin-right:5rem;
    float:right;
 }
 
 .counsel-component{
-    background-color:var(--Gray);
+    background-color:var(--light-gray);
     margin-top:5rem;
     margin-left:10rem;
     margin-bottom:5rem;
