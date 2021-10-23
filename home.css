@@ -3,15 +3,15 @@
 :root {
     --carlet: #89023E;
     --white: #f4f4f4;
-    --Gray: #6B7280;
+    --dark-gray: #6B7280;
+    --Gray:#9CA3AF;
 
 }
 
 body {
     font-family: 'Montserrat', sans-serif;
-    margin: 0%;
     display: block;
-    margin: auto;
+    margin: 0;
     background-color: var(--white);
 }
 
@@ -54,7 +54,7 @@ nav {
     color: var(--Gray);
     text-align: center;
     margin-top: 1rem;
-
+    margin-bottom: 1rem;
 }
 
 .heading-span {
@@ -62,6 +62,47 @@ nav {
 }
 
 /* section-cards */
+.tips {
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+    height: 250px;
+    position: relative;
+    overflow: hidden;
+}
+
+.cards {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: moving-cards 30s linear infinite;
+}
+
+.cards img {
+    margin: 1rem;
+    border: 1px solid black;
+    border-radius: 1rem;
+    max-width: 300px;
+    height: 200px;
+}
+
+@keyframes moving-cards {
+    0% {
+        transform: translate(0, 0);
+
+    }
+
+    100% {
+        transform: translate(-50%, 0);
+    }
+}
+
+.cards img:hover{
+    max-width:310px;
+    height: 210px;
+    box-shadow: 0 4px 8px 0 var(--Gray);
+}
 
 
 /* section-tests */
@@ -69,11 +110,23 @@ nav {
     float: left;
     width: 43%;
     padding: 10px;
-    margin: 40px;
+    /*margin: 40px;*/
     height: 300px;
     background-color: none;
     border: 1px solid black;
     border-radius: 1rem;
+}
+.test-component{
+   background-color: var(--Gray);
+   margin-right:5rem;
+   float:right;
+}
+
+.counsel-component{
+    background-color:var(--Gray);
+    margin-top:5rem;
+    margin-left:10rem;
+    margin-bottom:5rem;
 }
 
 
@@ -107,11 +160,28 @@ nav {
     max-height: 63%;
 }
 
-a,
-a:after {
+a,a:after {
     text-decoration: none;
     color: white;
 }
+/* services heading*/
+.services{
+    font-size: 1.8rem;
+    color: var(--dark-gray);
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.heading-test{
+   float:left;
+   margin-left:10rem;
+   margin-top:8rem;
+}
+.heading-counsel{
+    margin-top:15rem;
+    margin-right:3rem;
+    float : right;
+}
+
 
 /* footer */
 .details {
@@ -122,6 +192,7 @@ a:after {
 
 .list-contact {
     padding: 0.5rem;
+    color:white;
 }
 
 i {
