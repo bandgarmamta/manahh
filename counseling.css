@@ -5,7 +5,12 @@
     --white: #f4f4f4;
     --dark-gray: #3f3d56;
     --Gray: #9CA3AF;
-
+    --dark-green:#629677;
+    --egg-plant:#894B58;
+    --dark-blue: #33658a;
+    --light-blue: #566678;
+    --light-purple:#94778b;
+    --violet:#4c3957;
 }
 
 body {
@@ -50,6 +55,119 @@ a:after {
     color: white;
 }
 
+/* cards */
+.column {
+    float: left;
+    width: 16%;
+    padding: 0 10px;
+    margin: 3rem;
+}
+
+.row {
+    margin-top:3rem;
+    margin-bottom:3rem;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    /*padding: 16px;*/
+    width:20rem;
+    text-align: center;
+    background-color: #f1f1f1;
+    height:300px;
+    border-radius: 0.5rem;
+}
+
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+    }
+}
+.heroimg {
+    display: block;
+    margin: auto;
+    max-width: 50%;
+    margin-top: 3rem;
+    
+}
+
+
+p{
+    margin: 2rem 0rem;
+}
+.situational{
+    max-width:200px;
+}
+
+.card:hover{
+    box-shadow: 0 4px 8px 0 var(--Gray);
+}
+
+/* card header */
+.card-header{
+    margin:0px;
+    height: 6rem;
+    background-color: var(--carlet); 
+    border-top-right-radius: 0.5rem;
+    border-top-left-radius: 0.5rem;
+    padding-top:1rem;
+    font-size:1.5rem;
+    color:white;
+}
+
+
+.card hr{
+    margin-top:4rem;
+}
+
+.c1{
+    background-color: var(--dark-green);
+}
+
+.c2{
+   background-color: var(--dark-gray);
+}
+.c3{
+    background-color: var(--light-blue);
+}
+
+.c4{
+   background-color: var(--egg-plant);
+}
+.c5{
+    background-color: var(--dark-blue);
+}
+
+.c6{
+   background-color: var(--light-purple);
+}
+.c7{
+    background-color:var(--dark-green);
+}
+
+.c8{
+   background-color: var(--violet);
+}
+
+/* card footer
+.card-footer{
+    
+    width:20rem;
+    align-items: center;
+    height:2rem;
+    bottom: 0rem;
+    margin-top:8rem;
+    background-color: var(--Gray);
+}*/
+
 /* footer */
 .details {
     float: right;
@@ -76,7 +194,7 @@ i {
     padding: 1.5rem;
 }
 
-footer {
+.footer {
     background-color: var(--carlet);
     position: absolute;
     width: 100%;
