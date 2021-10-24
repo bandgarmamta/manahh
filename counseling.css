@@ -110,7 +110,6 @@ p{
 .card:hover{
     box-shadow: 0 4px 8px 0 var(--Gray);
 }
-
 /* card header */
 .card-header{
     margin:0px;
@@ -157,16 +156,27 @@ p{
    background-color: var(--violet);
 }
 
-/* card footer
-.card-footer{
-    
-    width:20rem;
-    align-items: center;
-    height:2rem;
-    bottom: 0rem;
-    margin-top:8rem;
-    background-color: var(--Gray);
-}*/
+.fa-bookmark-o{
+    margin-left:16rem;
+    margin-top:0.5rem;
+    cursor: pointer;
+}
+
+
+.tooltip{
+    visibility:hidden; 
+   position: absolute;
+   z-index: 1;
+   background-color: var(--Gray);
+   padding: 0.5rem;
+   font-size:0.8rem;
+   font-family: 'Montserrat', sans-serif; 
+   font-style:italic;
+}
+
+.fa-bookmark-o:hover .tooltip{
+    visibility: visible;
+}
 
 /* footer */
 .details {
