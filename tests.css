@@ -58,6 +58,7 @@ a:after {
 }
 
 /* section-tests */
+
 .column {
     float: left;
     width: 25%;
@@ -81,6 +82,11 @@ a:after {
     text-align: center;
     background-color: #f1f1f1;
     height:400px;
+}
+
+.test-heading{
+    font-size:1.5rem;
+    font-weight:bold;   
 }
 
 @media screen and (max-width: 600px) {
