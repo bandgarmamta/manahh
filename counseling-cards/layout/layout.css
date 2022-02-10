@@ -1,2 +1,24 @@
 @import url('../../home.css');
 
+h2{
+    margin:0;
+}
+.main-content{
+ margin:2rem;
+ display:flex;
+ flex-direction: column;
+}
+.tabs-wrapper{
+    display: flex;
+    border-bottom:1px solid grey;
+}
+.tab-title{
+    padding:0.5rem 1rem;
+    cursor: pointer;
+}
+.tab-title:nth-child(1){
+    border-bottom: 5px solid var(--carlet);
+}
+.tab-content{
+   margin:1rem;
+}
