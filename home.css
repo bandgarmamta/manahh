@@ -226,7 +226,7 @@ footer {
     position:absolute;
     width:100%;
     overflow:hidden;
-
+    bottom:0;
 }
 
 .vl1 {
