@@ -13,6 +13,7 @@ body {
     font-family: 'Montserrat', sans-serif;
     display: block;
     margin: 0;
+    padding: 0%;
     background-color: var(--white);
     overflow-x: hidden;
     box-sizing: content-box;
