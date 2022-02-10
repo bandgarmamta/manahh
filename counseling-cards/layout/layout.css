@@ -38,6 +38,7 @@ img{
     display:grid;
     grid-template-columns: repeat(3,1fr);
     grid-gap:40px 50px;
+    display: none;
 }
 .video-player{
     width: 100%;
