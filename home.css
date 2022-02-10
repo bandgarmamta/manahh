@@ -223,10 +223,8 @@ i {
 
 footer {
     background-color: var(--carlet);
-    position:absolute;
     width:100%;
     overflow:hidden;
-    bottom:0;
 }
 
 .vl1 {
