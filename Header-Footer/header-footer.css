@@ -27,6 +27,13 @@ body {
   margin: 1rem;
 }
 
+/* added for links decor */
+
+a{
+  text-decoration: none;
+  color: #f4f4f4;
+}
+
 nav {
   background-color: var(--carlet);
   display: inline-block;
