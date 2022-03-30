@@ -1,5 +1,7 @@
 var xValues = ["Correct", "Incorrect"];
-var yValues = [55, 49];
+var score = localStorage.getItem('score');
+var remaining_score = 5 - score;
+var yValues = [score,remaining_score];
 var barColors = [
   "#22c55e",
   "#ef4444",
