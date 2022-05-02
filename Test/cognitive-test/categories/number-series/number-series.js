@@ -9,7 +9,7 @@ function calculateScore(){
     score = 0;
     let x =0;
     const formvalue = new FormData(formData);
-
+   
     for(let i of formvalue.values()){
         
         if(i===correctAnswers[x]){
@@ -21,4 +21,3 @@ function calculateScore(){
     localStorage.setItem('score',score);
     
 }
-btnSubmit.addEventListener('click',calculateScore);
