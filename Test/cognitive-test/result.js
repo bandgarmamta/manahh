@@ -6,7 +6,12 @@ var barColors = [
   "#22c55e",
   "#ef4444",
 ];
-
+const correctAnswer = document.querySelectorAll(".correct-ans");
+const answers = localStorage.getItem('correctAnswers');
+const finalAnswers = JSON.parse(answers);
+correctAnswer.forEach((ans,index) => {
+  ans.textContent = finalAnswers[index];
+})
 new Chart("myChart", {
   type: "doughnut",
   data: {
