@@ -1,7 +1,7 @@
 import decisionTree from 'https://cdn.skypack.dev/decision-tree';
-const btnSubmit = document.querySelector("#btn-submit");
+const btnSubmit = document.querySelector(".btn-submit");
 const slider = document.querySelectorAll('.slider');
-const question = document.querySelectorAll('.question-desc');
+const question = document.querySelectorAll('.question-container p');
 
 btnSubmit.addEventListener("click", checkans);
 
