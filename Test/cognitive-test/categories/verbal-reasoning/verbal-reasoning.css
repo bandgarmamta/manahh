@@ -19,6 +19,8 @@ justify-content: center;
 flex-wrap: wrap;
 width:15%;
 height:fit-content;
+position: sticky;
+top:20%;
 }
 .test-heading {
     text-align: center;
@@ -31,6 +33,7 @@ height:fit-content;
    display: flex;
    flex-direction: column;
    gap:2rem;
+   width:60%;
 
 }
 .question-number{
