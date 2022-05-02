@@ -2,8 +2,12 @@ import decisionTree from 'https://cdn.skypack.dev/decision-tree';
 const btnSubmit = document.querySelector(".btn-submit");
 const slider = document.querySelectorAll('.slider');
 const question = document.querySelectorAll('.question-container p');
+const value = document.querySelectorAll('.value')
 
 btnSubmit.addEventListener("click", checkans);
+slider.forEach((element,index) => {
+    element.addEventListener("change",()=> value[index].textContent=element.value)
+    });
 
 var ans = [];
 var que = ["Am the life of the party."," Have little to say.","Feel little concern for others.","Have a soft heart.","Am always prepared.","Often forget to put things back in their proper place.","Get stressed out easily.","Get upset easily.","Have a rich vocabulary.","Do not have a good imagination.","Don't talk a lot.","Talk to a lot of different people at parties."," Am interested in people.","Am not really interested in others.","Leave my belongings around.","Like order.","Am relaxed most of the time.","Change my mood a lot.","Have difficulty understanding abstract ideas.","Am quick to understand things.","Feel comfortable around people.","Don't like to draw attention to myself.","Insult people.","Take time out for others.","Pay attention to details.","Shirk my duties.","Worry about things.","Have frequent mood swings.","Have a vivid imagination.","Use difficult words.","Keep in the background.","Don't mind being the center of attention.","Sympathize with others' feelings.","Feel others' emotions.","Make a mess of things.","Follow a schedule.","Seldom feel blue.","Get irritated easily.","Am not interested in abstract ideas.","Spend time reflecting on things.","Start conversations.","Am quiet around strangers.","Am not interested in other people's problems.","Make people feel at ease.","Get chores done right away.","Am exacting in my work.","Am easily disturbed.","Often feel blue.","Have excellent ideas.","Am full of ideas."];
