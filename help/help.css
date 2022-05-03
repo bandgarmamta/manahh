@@ -1,0 +1,32 @@
+@import url("/Header-Footer/header-footer.css");
+.cf{
+    display: flex;
+    flex-direction: column;
+    align-items: center;}
+.contact-form-wrapper{
+    margin: 3rem 0;
+}
+h1{
+    text-align: center;
+}
+input, textarea{
+    width:25rem;
+    height:4rem;
+    border-radius: 0.5rem;
+    margin-top: 1rem;
+    border:none;
+    padding-left:1rem;
+}
+.btn-submit{
+    margin-top:2rem;
+    font-size: 1.2rem;
+    padding:1rem 3rem;
+    border:none;
+    background-color: grey;
+    border-radius:0.5rem;
+    color:white;
+    
+}
+::placeholder{
+    font-size: 1.3rem;
+}

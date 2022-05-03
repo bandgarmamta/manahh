@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./help.css" rel="stylesheet" />
+    <link rel="icon" type="image/png" href="/images/favicon.png" />
+
+    <title>Help</title>
+  </head>
+  <body>
+    <nav>
+      <img class="nav-image" src="/images/manah-wbb.png" />
+      <div class="navbar">
+        <ul style="list-style: none">
+          <li class="list-nav"><a href="/index.html">Home</a></li>
+          <li class="list-nav">About Us</li>
+          <li class="list-nav">Help</li>
+        </ul>
+      </div>
+    </nav>
+    <main class="contact-form-wrapper">
+      <h1>Contact Form</h1>
+      <div class="cf">
+        <div class="half left cf">
+          <input type="text" id="input-name" placeholder="Name" />
+          <input type="email" id="input-email" placeholder="Email address" />
+          <input type="text" id="input-subject" placeholder="Subject" />
+        </div>
+        <div class="half right cf">
+          <textarea
+            name="message"
+            type="text"
+            id="input-message"
+            placeholder="Message"
+          ></textarea>
+        </div>
+        <button
+          class="btn-submit"
+          type="submit"
+          value="Submit"
+          id="input-submit"
+        >
+          Submit
+        </button>
+    </div>
+    </main>
+
+    <footer>
+      <div class="footer">
+        <div class="footer-container image">
+          <img class="footer-image" src="/images/manah-wbb.png" />
+        </div>
+        <div class="vl1"></div>
+
+        <div class="footer-container links"></div>
+        <div class="vl2"></div>
+
+        <div class="footer-container details">
+          <ul style="list-style: none">
+            <li class="list-contact">
+              <i class="fa fa-phone" aria-hidden="true"></i>123456789
+            </li>
+            <li class="list-contact">
+              <i class="fa fa-laptop" aria-hidden="true"></i
+              ><a href="https://manah.netlify.app/">Manah</a>
+            </li>
+            <li class="list-contact">
+              <i class="fa fa-map-marker" aria-hidden="true"></i>Mumbai
+            </li>
+            <li class="list-contact">
+              <i class="fa fa-globe" aria-hidden="true"></i>India
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+    <script type="text/javascript">
+      const userEmail = document.querySelector("#input-email");
+      const subject = document.querySelector("#input-subject");
+      const body = document.querySelector("#input-message");
+      const btnSubmit = document.querySelector(".btn-submit");
+
+      function sendEmail(e) {
+          e.preventDefault();
+          console.log(userEmail.value,subject.value,body.value)
+        Email.send({
+          SecureToken: "60867f31-c0dc-4dd3-964c-30fe83c28913",
+          To: "bandgarmamta@gmail.com",
+          From: userEmail.value,
+          Subject: subject.value,
+          Body: body.value,
+        }).then(function (message) {
+          alert("mail sent successfully");
+        }).catch(err => console.log(err));
+      }
+      btnSubmit.addEventListener("click",sendEmail)
+    </script>
+  </body>
+</html>
