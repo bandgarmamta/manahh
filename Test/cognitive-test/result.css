@@ -5,3 +5,11 @@ canvas{
     max-width:800px;
     padding: 1rem;
 }
+.correct-answers-wrapper{
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+}
+.correct-ans{
+    margin-left: 3rem;
+}

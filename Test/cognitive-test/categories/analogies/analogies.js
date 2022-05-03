@@ -1,6 +1,7 @@
 // 15,22,10,1/8,20
 
 const correctAnswers = ["BEAK","Horse","Guard","Solid","Flow"];
+localStorage.setItem('correctAnswers',JSON.stringify(correctAnswers));
 const formData = document.querySelector(".test-form");
 const btnSubmit = document.querySelector(".btn-submit");
 const qtOneOptions = document.querySelectorAll(".qt-one");
