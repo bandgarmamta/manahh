@@ -1,7 +1,14 @@
 // 15,22,10,1/8,20
 
 const correctAnswers = ["book", "important", "beak", "hate", "biased"];
-localStorage.setItem('correctAnswers',JSON.stringify(correctAnswers));
+localStorage.setItem('correctAnswers', JSON.stringify(correctAnswers));
+const testQuestions = [` Q1. Which word does NOT belong with the others?`,
+    `Q2. Which word is the odd man out?`,
+    `Q3. Which word does NOT belong with the others?`,
+    `Q4. Which word is the odd man out?`,
+    ` Q5. Pick the odd man out?`]
+localStorage.setItem("testQuestions", JSON.stringify(testQuestions));
+const userAnswers = [];
 const formData = document.querySelector(".test-form");
 const btnSubmit = document.querySelector(".btn-submit");
 const qtOneOptions = document.querySelectorAll(".qt-one");
@@ -19,13 +26,13 @@ function calculateScore() {
     const formvalue = new FormData(formData);
 
     for (let i of formvalue.values()) {
-
+        userAnswers.push(i)
         if (i === correctAnswers[x]) {
             score = score + 1;
         }
         x = x + 1;
     }
-
+    localStorage.setItem("userAnswers", JSON.stringify(userAnswers));
     localStorage.setItem('score', score);
 
 }
