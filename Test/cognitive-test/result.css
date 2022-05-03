@@ -1,15 +1,32 @@
-@import url('/home.css');
-canvas{
-    margin: auto;
-    width:100%;
-    max-width:800px;
-    padding: 1rem;
+@import url("/home.css");
+canvas {
+  margin: auto;
+  width: 100%;
+  max-width: 800px;
+  padding: 1rem;
 }
-.correct-answers-wrapper{
+.test-form{
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    font-size: 2rem;
+    align-items: center;
+    gap:2rem;
+    margin-bottom: 1rem;
 }
-.correct-ans{
-    margin-left: 3rem;
+.answer-options-wrapper{
+    font-size: 1.2rem;
+}
+.question-container {
+  padding: 1rem 1.5rem;
+  background-color: rgba(243, 229, 229, 0.767);
+  border-radius: 1rem;
+  width:40%;
+}
+.question-desc {
+  font-size: 1.5rem;
+}
+.answer-options-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
