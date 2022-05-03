@@ -1,0 +1,13 @@
+@import url("/Header-Footer/header-footer.css");
+.about-us{
+    display: flex;
+    width:90vw;
+    margin:5rem auto;
+    gap:5rem;
+}
+.about-us p{
+    font-size: 1.3rem;
+}
+.about-us-img{
+    width:40%;
+}
