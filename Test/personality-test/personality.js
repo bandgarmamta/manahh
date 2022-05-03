@@ -3,10 +3,15 @@ const btnSubmit = document.querySelector(".btn-submit");
 const slider = document.querySelectorAll('.slider');
 const question = document.querySelectorAll('.question-container p');
 const value = document.querySelectorAll('.value')
+const questionNumber = document.querySelectorAll(".question-number");
 
 btnSubmit.addEventListener("click", checkans);
 slider.forEach((element,index) => {
-    element.addEventListener("change",()=> value[index].textContent=element.value)
+    element.addEventListener("change",()=> {
+      value[index].textContent=element.value;
+      questionNumber[index].style.backgroundColor = "#77DD77"
+      
+    })
     });
 
 var ans = [];

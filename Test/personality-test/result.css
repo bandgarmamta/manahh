@@ -1,1 +1,19 @@
 @import url('/home.css');
+.results{
+    display: flex;
+    gap:2rem;
+    width:90vw;
+    margin:5rem auto;
+    justify-content: center;    
+}
+.results-content{
+    align-self: center;
+    width:50%;
+}
+.desc{
+    font-size: 1.5rem;
+}
+.heading{
+    color:grey;
+    font-size: 2.5rem;
+}
